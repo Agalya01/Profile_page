@@ -45,22 +45,43 @@
         </tr>
     </table>
 </section>
+
+    <!-- NEW Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+          <!-- Counter App -->
+    <div class="counter-box">
+        <h3>Counter App</h3>
+        <p id="count">0</p>
+
+        <button onclick="increase()">+</button>
+        <button onclick="decrease()">-</button>
+    </div>
+
+    </section>
+
         <section>
+
     <h2>Contact Me</h2>
-    <form>
-        <input type="text" placeholder="Your Name"><br><br>
-        <input type="email" placeholder="Your Email"><br><br>
-        <textarea placeholder="Your Message"></textarea><br><br>
-        <button type="submit">Send</button>
-    </form>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" id="name" placeholder="Your Name"><br><br>
+      <input type="email" id="email" placeholder="Your Email"><br><br>
+      <textarea id="message" placeholder="Your Message"></textarea><br><br>
+      <button type="submit">Send</button><br>
+      <p id="responseMsg"></p>
+   </form>
 </section>
 
 <footer>
     <p>© 2026 Agalya</p>
 </footer>
 
+<!--link to  js file here-->
+<script src="script.js"></script>
 
-
+</body>
+</html>
 
 </body>
 </html>

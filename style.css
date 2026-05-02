@@ -13,6 +13,11 @@ body {
   .container {
     width: 90%;
   }
+   section {
+    width: 95%;
+    padding: 15px;
+  }
+
 }
 
 /* Header */
@@ -21,6 +26,9 @@ header {
     color: white;
     text-align: center;
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-img {
@@ -58,6 +66,8 @@ h2 {
 /* Skills */
 ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 ul li {
@@ -118,4 +128,17 @@ footer {
     margin-top: 20px;
     background: #310346;
     color: white;
+}
+.counter-box {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#count {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.counter-box button {
+  margin: 5px;
 }
